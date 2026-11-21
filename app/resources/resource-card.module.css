@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 16px 20px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 12px;
+}
+
+.category {
+  padding: 2px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.8;
+}
+
+.titleLink {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.titleLink:hover {
+  text-decoration: underline;
+}
+
+.url {
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.6;
+  overflow-wrap: anywhere;
+}
+
+.saveButton {
+  margin-top: 6px;
+  min-height: 44px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  background: var(--foreground);
+  color: var(--background);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.saveButton:hover {
+  opacity: 0.85;
+}
+
+.saveButton:disabled {
+  opacity: 0.55;
+  cursor: default;
+}

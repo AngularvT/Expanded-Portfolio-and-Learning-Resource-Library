@@ -1,0 +1,174 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 32px;
+  max-width: 720px;
+  font-family: var(--font-geist-sans);
+}
+
+.page h1 {
+  font-size: 34px;
+  letter-spacing: -1.5px;
+}
+
+.intro {
+  max-width: 560px;
+  line-height: 28px;
+  opacity: 0.75;
+}
+
+.adminLink {
+  text-decoration: underline;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.loading,
+.empty,
+.loadError {
+  margin-top: 16px;
+  line-height: 28px;
+}
+
+.loadError {
+  color: #b45309;
+}
+
+.learningSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.learningSection h2 {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+
+.learningIntro {
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.65;
+}
+
+.learningEmpty,
+.loading {
+  line-height: 28px;
+}
+
+.learningList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.learningCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 20px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 12px;
+}
+
+.learningHead {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.learningTitle {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.learningTitle:hover {
+  text-decoration: underline;
+}
+
+.learningMeta {
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.65;
+}
+
+.noteDisplay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.noteText {
+  font-size: 15px;
+  line-height: 24px;
+  opacity: 0.85;
+  white-space: pre-wrap;
+}
+
+.noteEditor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.noteTextarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 8px;
+  background: var(--background);
+  color: var(--foreground);
+  font: inherit;
+  line-height: 22px;
+  resize: vertical;
+}
+
+.noteActions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.noteButton,
+.noteSave,
+.noteCancel,
+.removeButton {
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  background: transparent;
+  color: var(--foreground);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.noteButton:hover,
+.noteSave:hover,
+.noteCancel:hover {
+  opacity: 0.85;
+}
+
+.noteSave {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.removeButton {
+  border-color: rgba(220, 38, 38, 0.5);
+  color: #dc2626;
+}
+
+.removeButton:hover {
+  background: rgba(220, 38, 38, 0.1);
+}
